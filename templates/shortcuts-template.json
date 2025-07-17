@@ -1,0 +1,79 @@
+{
+  "categories": [
+    {
+      "id": "{{CATEGORY_ID}}",
+      "name": "📚 Readeck - Save Articles",
+      "shortcuts": [
+        {
+          "authToken": "{{AUTH_TOKEN}}",
+          "authentication": "bearer",
+          "bodyContent": "{\n  \"labels\": [\n    \"{{DEFAULT_LABEL_VAR_ID}}\"\n  ],\n  \"title\": \"{{ARTICLE_TITLE_VAR_ID}}\",\n  \"url\": \"{{ARTICLE_URL_VAR_ID}}\"\n}",
+          "contentType": "application/json",
+          "description": "Save current article to your Readeck reading list",
+          "iconName": "flat_color_bookmark_2",
+          "id": "{{SHORTCUT_ID_SAVE_ARTICLE}}",
+          "method": "POST",
+          "name": "📖 Save Article",
+          "responseHandling": {
+            "successMessage": "📚 Article saved to your reading list!",
+            "successOutput": "message",
+            "uiType": "toast",
+            "failureOutput": "message",
+            "failureMessage": "❌ Failed to save article. Please check your connection and API token."
+          },
+          "url": "{{SERVER_URL_VAR_ID}}/api/bookmarks",
+          "timeout": 10000,
+          "followRedirects": true,
+          "acceptAllCertificates": false,
+          "acceptCookies": true,
+          "requireConfirmation": false,
+          "launcherShortcut": true,
+          "secondaryLauncherShortcut": false,
+          "quickSettingsTileShortcut": false,
+          "wifiSsid": "",
+          "delay": 0,
+          "repetitions": {
+            "count": 1,
+            "interval": 0
+          }
+        }
+      ]
+    }
+  ],
+  "compatibilityVersion": 71,
+  "variables": [
+    {
+      "id": "{{SERVER_URL_VAR_ID}}",
+      "key": "readeck_server_url",
+      "value": "{{SERVER_URL}}"
+    },
+    {
+      "id": "{{DEFAULT_LABEL_VAR_ID}}",
+      "key": "default_label",
+      "value": "{{DEFAULT_LABEL}}"
+    },
+    {
+      "flags": 4,
+      "id": "{{ARTICLE_TITLE_VAR_ID}}",
+      "key": "article_title",
+      "type": "text",
+      "options": {
+        "allowShare": true,
+        "shareTitle": true,
+        "shareText": false
+      }
+    },
+    {
+      "flags": 1,
+      "id": "{{ARTICLE_URL_VAR_ID}}",
+      "key": "article_url",
+      "type": "text",
+      "options": {
+        "allowShare": true,
+        "shareTitle": false,
+        "shareText": false
+      }
+    }
+  ],
+  "version": 76
+}

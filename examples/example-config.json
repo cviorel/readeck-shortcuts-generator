@@ -1,0 +1,55 @@
+{
+  "authToken": "YOUR_READECK_AUTH_TOKEN_HERE",
+  "serverUrl": "http://localhost:8090",
+  "defaultLabel": "inbox",
+  "customLabels": [
+    {
+      "label": "Work",
+      "name": "💼 Work",
+      "iconName": "flat_color_briefcase_2",
+      "description": "Save article with work-related label",
+      "successMessage": "💼 Article saved with work label!",
+      "failureMessage": "❌ Failed to save work article."
+    },
+    {
+      "label": "Tech",
+      "name": "💻 Tech",
+      "iconName": "flat_color_computer_2",
+      "description": "Save article with technology label",
+      "successMessage": "💻 Article saved with tech label!",
+      "failureMessage": "❌ Failed to save tech article."
+    },
+    {
+      "label": "Learning",
+      "name": "🎓 Learning",
+      "iconName": "flat_color_graduation_cap_2",
+      "description": "Save article for learning and education",
+      "successMessage": "🎓 Article saved for learning!",
+      "failureMessage": "❌ Failed to save learning article."
+    },
+    {
+      "label": "News",
+      "name": "📰 News",
+      "iconName": "flat_color_newspaper_2",
+      "description": "Save news article for later reading",
+      "successMessage": "📰 News article saved!",
+      "failureMessage": "❌ Failed to save news article."
+    },
+    {
+      "label": "Research",
+      "name": "🔍 Research",
+      "iconName": "flat_color_magnifying_glass_2",
+      "description": "Save article for research purposes",
+      "successMessage": "🔍 Article saved for research!",
+      "failureMessage": "❌ Failed to save research article."
+    },
+    {
+      "label": "Personal",
+      "name": "👤 Personal",
+      "iconName": "flat_color_person_2",
+      "description": "Save article for personal interest",
+      "successMessage": "👤 Personal article saved!",
+      "failureMessage": "❌ Failed to save personal article."
+    }
+  ]
+}
